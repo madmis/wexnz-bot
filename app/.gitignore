@@ -1,0 +1,9 @@
+
+###> symfony/framework-bundle ###
+.env
+/public/bundles/
+/var/
+/vendor/
+*.yaml
+src/Command/TestCommand.php
+###< symfony/framework-bundle ###

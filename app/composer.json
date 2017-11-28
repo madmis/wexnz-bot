@@ -1,0 +1,60 @@
+{
+    "name": "madmis/wexnz-bot",
+    "description": "Wex.nz trading bot",
+    "type": "project",
+    "license": "MIT",
+    "require": {
+        "php": "^7.1.3",
+        "madmis/wexnz-api": "dev-master",
+        "monolog/monolog": "^2.0@dev",
+        "symfony/console": "^4.0",
+        "symfony/dependency-injection": "^4.1@dev",
+        "symfony/framework-bundle": "^4.0",
+        "symfony/options-resolver": "3.3",
+        "symfony/var-dumper": "^4.1@dev",
+        "symfony/yaml": "^4.0"
+    },
+    "require-dev": {
+        "symfony/flex": "^1.0",
+        "symfony/dotenv": "^4.0"
+    },
+    "minimum-stability": "dev",
+    "config": {
+        "preferred-install": {
+            "*": "dist"
+        },
+        "sort-packages": true
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "App\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "auto-scripts": {
+            "cache:clear": "symfony-cmd"
+        },
+        "post-install-cmd": [
+            "@auto-scripts"
+        ],
+        "post-update-cmd": [
+            "@auto-scripts"
+        ]
+    },
+    "conflict": {
+        "symfony/symfony": "*",
+        "symfony/twig-bundle": "<3.3",
+        "symfony/debug": "<3.3"
+    },
+    "extra": {
+        "symfony": {
+            "id": "01BZY34V2E0X71C80M3H7SS275",
+            "allow-contrib": false
+        }
+    }
+}
