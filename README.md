@@ -77,6 +77,6 @@ To run 2 bot instances:
 Then put this case to configuration files (each api key in the corresponding config file)
 * Run 2 bot instances (in separate terminal windows)
 ```bash
-    $ php ~/wexnz-bot/app/bin/console simple-bot:run ~/wexnz-bot/app/conf.bthbtc.yaml 
-    $ php ~/wexnz-bot/app/bin/console simple-bot:run ~/wexnz-bot/app/conf.ethbtc.yaml 
+    $ php ~/wexnz-bot/app/bin/console shorting-bot:run ~/wexnz-bot/app/conf.bthbtc.yaml 
+    $ php ~/wexnz-bot/app/bin/console shorting-bot:run ~/wexnz-bot/app/conf.ethbtc.yaml 
 ```
