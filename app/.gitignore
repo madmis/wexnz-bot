@@ -4,6 +4,6 @@
 /public/bundles/
 /var/
 /vendor/
-*.yaml
+/*.yaml
 src/Command/TestCommand.php
 ###< symfony/framework-bundle ###
