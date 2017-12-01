@@ -21,7 +21,7 @@ and extract sources to a project (destination) folder **or** clone project
 
 Create configuration file:
 ```bash
-    $ cp ~/wexnz-bot/app/simple-bot-config.yaml.dist ~/wexnz-bot/app/conf.bthbtc.yaml
+    $ cp ~/wexnz-bot/app/shorting-bot-config.yaml.dist ~/wexnz-bot/app/conf.bthbtc.yaml
 ```
 and change configuration parameters with your requirements.
 
@@ -43,7 +43,7 @@ Then do next steps:
 ```
 and run the bot:
 ```bash
-    $ php ~/wexnz-bot/app/bin/console simple-bot:run ~/wexnz-bot/app/conf.bthbtc.yaml 
+    $ php ~/wexnz-bot/app/bin/console shorting-bot:run ~/wexnz-bot/app/conf.bthbtc.yaml 
 ```
 
 
@@ -57,10 +57,12 @@ Then do next steps:
     $ cd ~/wexnz-bot
     $ docker-compose up -d
     $ docker exec -ti wexnzbot_php_1 bash
+    $ cd /var/www
+    $ composer install
 ```
 and run the bot:
 ```bash
-    $ php /var/www/bin/console simple-bot:run /var/www/conf.bthbtc.yaml 
+    $ php /var/www/bin/console shorting-bot:run /var/www/conf.bthbtc.yaml 
 ```
 
 ### Concurrent Running
